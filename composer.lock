@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bdb7177b4e4a40775cb38a04e37e1100",
-    "content-hash": "a99752c93c08bf162d38d729687eedbf",
+    "hash": "84552c253c6a1bac0e50040a717e1e33",
+    "content-hash": "a11b18f1166a2497f6c91ae6d0059b71",
     "packages": [
         {
             "name": "cache/adapter-common",
@@ -1569,6 +1569,28 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08 08:55:37"
+        },
+        {
+            "name": "symfony/apache-pack",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/apache-pack.git",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/apache-pack/zipball/3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "reference": "3aa5818d73ad2551281fc58a75afd9ca82622e6c",
+                "shasum": ""
+            },
+            "type": "symfony-pack",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pack for Apache support in Symfony",
+            "time": "2017-12-12 01:46:35"
         },
         {
             "name": "symfony/cache",
