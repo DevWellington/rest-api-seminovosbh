@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "friendsofsymfony/rest-bundle": "^2.5",
+        "jaeger/querylist": "^4.1",
         "jms/serializer-bundle": "^2.4",
         "symfony/console": "3.4.*",
         "symfony/dotenv": "3.4.*",

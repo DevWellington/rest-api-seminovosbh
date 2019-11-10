@@ -2,10 +2,12 @@
 
 namespace App\Controller\V1;
 
+use App\Crawler\VeiculoCrawler;
+use App\Entity\Categoria\CategoriaEntity;
+use App\Entity\Marca\MarcaEntity;
+use App\Entity\Modelo\ModeloEntity;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\View\View;
-use Nelmio\ApiDocBundle\Annotation\Model;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,12 +20,28 @@ class ApiController extends FOSRestController
 {
 
     /**
-     * @Rest\Get("test/", name="test_")
+     * @Rest\Get("veiculos/", name="veiculos_")
      *
      * @return View
      */
-    public function getTest()
+    public function getVeiculos(Request $request)
     {
-        return $this->view(array('0fff' => 'teste', [['fla' => 'flaoa', '2019' => '09', '01'], false], 'faks'));
+        $crawler = new VeiculoCrawler($request);
+        $veiculos = $crawler->listAll();
+
+        return $this->view($veiculos);
+    }
+
+    /**
+     * @Rest\Get("veiculo/{id}", name="veiculo_")
+     *
+     * @return View
+     */
+    public function getVeiculo(Request $request, $id)
+    {
+        $crawler = new VeiculoCrawler($request);
+        $veiculo = $crawler->getById($id);
+
+        return $this->view($veiculo);
     }
 }

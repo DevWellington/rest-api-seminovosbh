@@ -1,4 +1,13 @@
 {
+    "cache/adapter-common": {
+        "version": "1.1.0"
+    },
+    "cache/filesystem-adapter": {
+        "version": "1.0.0"
+    },
+    "cache/tag-interop": {
+        "version": "1.0.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -32,6 +41,24 @@
             "config/packages/fos_rest.yaml"
         ]
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.4.1"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.6.1"
+    },
+    "jaeger/g-http": {
+        "version": "v1.6.0"
+    },
+    "jaeger/phpquery-single": {
+        "version": "1.0.0"
+    },
+    "jaeger/querylist": {
+        "version": "v4.1.1"
+    },
     "jms/metadata": {
         "version": "1.7.0"
     },
@@ -55,6 +82,9 @@
             "config/packages/prod/jms_serializer.yaml"
         ]
     },
+    "league/flysystem": {
+        "version": "1.0.57"
+    },
     "phpcollection/phpcollection": {
         "version": "0.5.0"
     },
@@ -67,11 +97,17 @@
     "psr/container": {
         "version": "1.0.0"
     },
+    "psr/http-message": {
+        "version": "1.0.1"
+    },
     "psr/log": {
         "version": "1.1.2"
     },
     "psr/simple-cache": {
         "version": "1.0.1"
+    },
+    "ralouphie/getallheaders": {
+        "version": "3.0.3"
     },
     "symfony/cache": {
         "version": "v3.4.33"
@@ -175,8 +211,14 @@
     "symfony/templating": {
         "version": "v3.4.33"
     },
+    "symfony/var-dumper": {
+        "version": "v3.4.33"
+    },
     "symfony/yaml": {
         "version": "v3.4.33"
+    },
+    "tightenco/collect": {
+        "version": "v5.5.48"
     },
     "willdurand/jsonp-callback-validator": {
         "version": "v1.1.0"
