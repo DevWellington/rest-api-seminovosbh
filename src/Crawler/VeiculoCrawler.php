@@ -378,9 +378,9 @@ class VeiculoCrawler implements VeiculoCrawlerInterface
     private function makeUrl(): VeiculoCrawlerInterface
     {
         $this->url['crawler']  = $this->url['portal'];
-        $this->url['crawler'] .= ($this->categoria->getName()) ? '/' . $this->categoria->getName() : '';
-        $this->url['crawler'] .= ($this->marca->getName()) ? '/' . $this->marca->getName() : '';
-        $this->url['crawler'] .= ($this->modelo->getName()) ? '/' . $this->modelo->getName() : '';
+        $this->url['crawler'] .= ($this->categoria->getName() && !($this->veiculo->getId())) ? '/' . $this->categoria->getName() : '';
+        $this->url['crawler'] .= ($this->marca->getName() && !($this->veiculo->getId())) ? '/' . $this->marca->getName() : '';
+        $this->url['crawler'] .= ($this->modelo->getName() && !($this->veiculo->getId())) ? '/' . $this->modelo->getName() : '';
 
         if ($this->ano['inicio']) {
             $this->url['crawler'] .= '/ano-' . $this->ano['inicio'];
@@ -412,7 +412,7 @@ class VeiculoCrawler implements VeiculoCrawlerInterface
             $this->url['crawler'] .= '/km--' . $this->km['fim'];
         }
 
-        $this->url['crawler'] .= ($this->page['atual']) ? '?page=' . $this->page['atual'] : '';
+        $this->url['crawler'] .= ($this->page['atual'] && !($this->veiculo->getId())) ? '?page=' . $this->page['atual'] : '';
 
         $this->url['crawler'] .= ($this->veiculo->getId()) ? '/' . $this->veiculo->getId() : '';
 
