@@ -9,6 +9,17 @@ https://seminovos.com.br/
 #### Image with solution drawing and project architecture
 ![Idea propused of project in image project](./image-of-project.png)
 
+### Application test deployed in Heroku
+
+URL: http://rest-api-seminovosbh.herokuapp.com/public/
+
+URL Examples: 
+
+- List by Model: 
+    http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculos/?categoria=carro&marca=honda&modelo=accord
+- List by ID:
+    http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculo/2541479
+
 ## TODO
 
 Find in **@todo** in the PHP Class Codes to proceed the evolution of the project, it was initially developed with ultra-short proposed time.
@@ -29,14 +40,14 @@ https://seminovos.com.br/filtros?[captured-last-version-in-app.js]
     - preco_fim: (int value)
     - km_inicio: (int value)
     - km_fim: (int value)
-    - **URL Example:** http://your-app-url/api/v1/veiculos/?categoria=carro&marca=honda&modelo=accord
+    - **URL Example:** http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculos/?categoria=carro&marca=honda&modelo=accord
 
 - List by id/cod:
     - id (int value)
-    - **URL Example:** http://your-app-url/api/v1/veiculo/2541479
+    - **URL Example:** http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculo/2541479
 
 ## Examples
-Example list all by filter route: http://your-app-url/api/v1/veiculos/?categoria=carro&marca=honda&modelo=accord
+Example list all by filter route: http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculos/?categoria=carro&marca=honda&modelo=accord
 
 
 ```json
@@ -682,7 +693,7 @@ Example list all by filter route: http://your-app-url/api/v1/veiculos/?categoria
 }
 ```
 
-Example of route: http://your-app-url/api/v1/veiculo/2541479
+Example of route: http://rest-api-seminovosbh.herokuapp.com/public/api/v1/veiculo/2541479
 
 ```json
 {
